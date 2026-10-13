@@ -3,11 +3,6 @@ import {
   Scan, 
   Sparkles, 
   ArrowRight, 
-  Activity, 
-  ShieldCheck, 
-  Clock, 
-  Layers, 
-  CheckCircle2,
   FileText
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';
@@ -69,6 +64,19 @@ export default function HeroSection({
             <FileText className="w-4 h-4 text-cyan-400" />
             <span>Örnek Klinik Raporu İncele</span>
           </button>
+
+          {onOpenQuote && (
+            <button
+              onClick={() => {
+                sound.playClick();
+                onOpenQuote();
+              }}
+              className="py-3.5 px-6 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 hover:bg-cyan-500/20 text-cyan-300 font-semibold text-sm flex items-center gap-2 transition-all"
+            >
+              <Sparkles className="w-4 h-4 text-cyan-400" />
+              <span>Teklif & Demo Al</span>
+            </button>
+          )}
         </div>
 
         {/* 4 Telemetry Stats Bar */}

@@ -4,15 +4,11 @@ import {
   TrendingDown, 
   TrendingUp, 
   CheckCircle2, 
-  SlidersHorizontal,
-  Sparkles,
-  Zap
+  Sparkles
 } from 'lucide-react';
-import { sound } from '../utils/soundFx';
 
 export default function BeforeAfterMorph() {
   const [sliderPos, setSliderPos] = useState(50);
-  const [isWeek12, setIsWeek12] = useState(true);
 
   const handleSliderChange = (e) => {
     setSliderPos(Number(e.target.value));

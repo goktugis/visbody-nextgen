@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle, Mail, MapPin, X, ArrowUpRight } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, ArrowUpRight } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 
 export default function FloatingContactHub({ onOpenMap, onOpenCampaigns }) {

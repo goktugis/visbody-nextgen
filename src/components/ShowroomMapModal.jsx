@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, MapPin, Building, Navigation, Phone, ExternalLink } from 'lucide-react';
+import { X, MapPin, Building, Phone, ExternalLink } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 
 export default function ShowroomMapModal({ onClose }) {

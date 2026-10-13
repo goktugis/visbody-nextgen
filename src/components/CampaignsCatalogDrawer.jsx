@@ -6,11 +6,7 @@ import {
   Percent, 
   Download, 
   CheckCircle2, 
-  Send, 
-  Sparkles, 
-  Tag, 
-  ArrowRight,
-  ShieldCheck
+  Send
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 
@@ -177,6 +173,20 @@ export default function CampaignsCatalogDrawer({ onClose, onOpenQuote }) {
                   </div>
                   <h4 className="text-sm font-bold text-white">{camp.title}</h4>
                   <p className="text-xs text-slate-400">{camp.desc}</p>
+                  {onOpenQuote && (
+                    <div className="pt-1">
+                      <button
+                        onClick={() => {
+                          sound.playClick();
+                          onClose();
+                          onOpenQuote();
+                        }}
+                        className="w-full py-2 rounded-xl bg-cyan-500/10 border border-cyan-500/30 hover:bg-cyan-500/20 text-cyan-300 font-semibold text-xs flex items-center justify-center gap-1.5 transition-all"
+                      >
+                        <span>Kampanyadan Yararlan / Teklif Al</span>
+                      </button>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

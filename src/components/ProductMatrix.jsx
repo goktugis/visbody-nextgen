@@ -7,13 +7,9 @@ import {
   ShieldCheck, 
   Check, 
   ArrowRight, 
-  Sparkles, 
-  Maximize2, 
   Cpu, 
   FileCheck2, 
-  Layers, 
-  Zap,
-  HelpCircle
+  Layers
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 

@@ -19,7 +19,6 @@ import CampaignsCatalogDrawer from './components/CampaignsCatalogDrawer';
 import ShowroomMapModal from './components/ShowroomMapModal';
 import FloatingContactHub from './components/FloatingContactHub';
 import CookieConsentBanner from './components/CookieConsentBanner';
-import { translations } from './data/translations';
 
 export default function App() {
   const [lang, setLang] = useState('tr');
@@ -42,8 +41,6 @@ export default function App() {
   const [isStoryOpen, setIsStoryOpen] = useState(false);
   const [isCampaignsOpen, setIsCampaignsOpen] = useState(false);
   const [isMapOpen, setIsMapOpen] = useState(false);
-
-  const t = translations[lang] || translations.tr;
 
   const handleOpenQuote = (productData = {}) => {
     setQuoteInitialData(productData);

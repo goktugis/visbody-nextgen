@@ -6,11 +6,10 @@ import {
   Share2, 
   Eye, 
   Clock, 
-  Sparkles, 
   X, 
   Check, 
   Volume2, 
-  VolumeX,
+  VolumeX, 
   Tv
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';

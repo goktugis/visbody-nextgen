@@ -6,9 +6,7 @@ import {
   Menu, 
   X, 
   Scan, 
-  ArrowRight,
-  ShieldCheck,
-  Cpu
+  ArrowRight
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { X, ChevronLeft, ChevronRight, Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { X } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 
 const storySlides = [

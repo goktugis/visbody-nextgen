@@ -4,10 +4,7 @@ import {
   MapPin, 
   Search, 
   CheckCircle2, 
-  Phone, 
   Calendar, 
-  Filter, 
-  Building,
   Star
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';

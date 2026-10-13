@@ -4,11 +4,8 @@ import {
   X, 
   Send, 
   CheckCircle2, 
-  ShieldCheck, 
-  Sparkles,
-  Building,
-  Phone,
-  Mail,
+  Phone, 
+  Mail, 
   User
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, QrCode, Copy, Check, Smartphone, Sparkles } from 'lucide-react';
+import { X, Copy, Check } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 
 export default function QrShareModal({ onClose }) {

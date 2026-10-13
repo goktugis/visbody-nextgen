@@ -5,11 +5,8 @@ import {
   Layers, 
   Activity, 
   Zap, 
-  Maximize2, 
-  Eye, 
   Scan, 
   CheckCircle2, 
-  ChevronRight,
   ShieldCheck,
   Cpu
 } from 'lucide-react';
@@ -32,6 +29,7 @@ export default function DigitalTwin3D({
   const laserRef = useRef(null);
   const ringsGroupRef = useRef(null);
   const skeletonGroupRef = useRef(null);
+  const rightShoulderRef = useRef(null);
   const bodyMeshRef = useRef(null);
   const animFrameIdRef = useRef(null);
 
@@ -269,7 +267,7 @@ export default function DigitalTwin3D({
     const jointNodes = [
       { name: 'Cervical C7', pos: [0, 1.28, -0.06], color: 0xef4444 }, // Red for forward head
       { name: 'L Shoulder', pos: [-0.48, 1.08, 0], color: 0xf59e0b },
-      { name: 'R Shoulder', pos: [0.48, 1.08 + (currentPosture.shoulderTilt * 0.015), 0], color: 0xf59e0b },
+      { name: 'R Shoulder', pos: [0.48, 1.08, 0], color: 0xf59e0b },
       { name: 'Thoracic T12', pos: [0, 0.72, -0.02], color: 0x10b981 },
       { name: 'Lumbar L5', pos: [0, 0.38, 0.04], color: 0x38bdf8 },
       { name: 'Pelvis ASIS', pos: [0, 0.18, 0.08], color: 0xec4899 },
@@ -287,6 +285,9 @@ export default function DigitalTwin3D({
         new THREE.MeshStandardMaterial({ color: node.color, emissive: node.color, emissiveIntensity: 0.6 })
       );
       sphere.position.set(...node.pos);
+      if (node.name === 'R Shoulder') {
+        rightShoulderRef.current = sphere;
+      }
       skeletonGroup.add(sphere);
     });
 
@@ -393,6 +394,13 @@ export default function DigitalTwin3D({
       renderer.dispose();
     };
   }, [isAutoRotate, isScanning]);
+
+  // Dynamically update skeleton posture positions without recreating Three.js scene
+  useEffect(() => {
+    if (rightShoulderRef.current) {
+      rightShoulderRef.current.position.y = 1.08 + (currentPosture.shoulderTilt * 0.015);
+    }
+  }, [currentPosture.shoulderTilt]);
 
   // Mode Switch Handlers
   const handleModeChange = (mode) => {

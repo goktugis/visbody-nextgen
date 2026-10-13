@@ -4,11 +4,8 @@ import {
   MapPin, 
   Phone, 
   Mail, 
-  FileText, 
   ShieldCheck, 
-  QrCode,
-  Heart,
-  Globe
+  QrCode
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 

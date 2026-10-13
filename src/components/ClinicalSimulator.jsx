@@ -2,8 +2,6 @@ import React from 'react';
 import { 
   Sliders, 
   UserCheck, 
-  AlertTriangle, 
-  TrendingUp, 
   Activity, 
   FileText, 
   Sparkles,

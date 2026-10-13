@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { 
   Calculator, 
-  TrendingUp, 
   Clock, 
-  Coins, 
-  ShieldCheck, 
   ArrowRight,
   Sparkles,
   Building2

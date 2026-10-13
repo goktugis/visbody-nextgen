@@ -2,14 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { 
   Bot, 
   Send, 
-  Sparkles, 
   X, 
-  ChevronUp, 
-  ChevronDown, 
   Cpu, 
-  ShieldCheck, 
-  RefreshCw,
-  HelpCircle
+  RefreshCw
 } from 'lucide-react';
 import { sound } from '../utils/soundFx';
 
