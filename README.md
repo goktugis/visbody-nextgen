@@ -6,9 +6,13 @@
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL-black.svg)]()
 [![Tailwind](https://img.shields.io/badge/Tailwind-v4-cyan.svg)]()
 [![DEXA Correlation](https://img.shields.io/badge/DEXA%20r-0.984-purple.svg)]()
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/goktugis/visbody-nextgen)
 
 > **Senior Computer Engineering Portfolio Project**  
 > An enterprise-grade, clinical-level redesign and functional reimagination of [visbody.com.tr](https://www.visbody.com.tr/).
+> 
+> 🔗 **GitHub Repository:** [https://github.com/goktugis/visbody-nextgen](https://github.com/goktugis/visbody-nextgen)  
+> 🚀 **One-Click Deploy on Render:** [Deploy to Render](https://render.com/deploy?repo=https://github.com/goktugis/visbody-nextgen)
 
 ---
 
