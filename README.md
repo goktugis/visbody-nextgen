@@ -78,7 +78,8 @@ visbody-nextgen/
 │   ├── App.jsx                      # State management & orchestration
 │   ├── index.css                    # Tailwind CSS v4 & custom shaders
 │   └── main.jsx
-├── .github/workflows/ci.yml         # Automated CI/CD pipeline
+├── docs/
+│   └── ci-workflow.yml          # Automated CI/CD pipeline template
 ├── ARCHITECTURE.md                  # Comprehensive system documentation
 └── AI_EVALUATION_REPORT.md          # Candidate evaluation scorecard
 ```
